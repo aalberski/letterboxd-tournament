@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie tournament</title>
+</head>
+<body>
+    <h1>Movie tournament</h1>
+    <form method = "POST">
+        <button type="submit" name="winner" value="{{pair[0]}}">{{pair[0]}}</button>
+        <button type="submit" name="winner" value="{{pair[1]}}">{{pair[1]}}</button>
+    </form>
+
+    {% if winner %}
+    <p>You chose: <strong>{{ winner }}</strong></p>
+    <img>
+    {% endif %}
+</body>
+</html>
